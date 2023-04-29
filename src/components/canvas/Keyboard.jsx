@@ -12,7 +12,7 @@ const Keyboard = ({ isMobile }) => {
         position={[-20, 50, 10]}
         angle={0.12}
         penumbra={1}
-        intensity={1}
+        intensity={0.25}
         castShadow
         shadow-mapSize={1024}
       />
@@ -20,8 +20,8 @@ const Keyboard = ({ isMobile }) => {
       <primitive
         object={computer.scene}
         scale={isMobile ? 4 : 7}
-        position={isMobile ? [0, -1, 0] : [0, -3, 0]}
-        rotation={[1, 0, 0]}
+        position={isMobile ? [0, -1, 0] : [0, -2.5, 0]}
+        rotation={[1, 0.9, -0.9]}
       />
     </mesh>
   );
@@ -32,7 +32,7 @@ const KeyboardCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
   // Effects
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
+    const mediaQuery = window.matchMedia("(max-width: 800px)");
 
     setIsMobile(mediaQuery.matches);
 
