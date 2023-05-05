@@ -4,15 +4,13 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
-
 import "react-vertical-timeline-component/style.min.css";
-
 import { styles } from "../styles";
-import { experiences } from "../constants";
+import { formation } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
-const ExperienceCard = ({ experience }) => {
+const FormationCard = ({ formation }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -20,32 +18,31 @@ const ExperienceCard = ({ experience }) => {
         color: "#fff",
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-      date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
+      iconStyle={{ background: formation.iconBg }}
       icon={
         <div className="flex justify-center items-center w-full h-full">
           <img
-            src={experience.icon}
-            alt={experience.company_name}
+            src={formation.icon}
+            alt={formation.company_name}
             className="w-[60%] h-[60%] object-contain"
           />
         </div>
       }
     >
       <div>
-        <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+        <h3 className="text-white text-[24px] font-bold">{formation.title}</h3>
         <p
           className="text-secondary text-[16px] font-semibold"
           style={{ margin: 0 }}
         >
-          {experience.company_name}
+          {formation.company_name}
         </p>
       </div>
 
       <ul className="mt-5 list-disc ml-5 space-y-2">
-        {experience.points.map((point, index) => (
+        {formation.points.map((point, index) => (
           <li
-            key={`experience-point-${index}`}
+            key={`formation-point-${index}`}
             className="text-white-100 text-[14px] pl-1 tracking-wider"
           >
             {point}
@@ -56,7 +53,7 @@ const ExperienceCard = ({ experience }) => {
   );
 };
 
-const Experience = () => {
+const Formation = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -65,11 +62,8 @@ const Experience = () => {
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
-          {experiences.map((experience, index) => (
-            <ExperienceCard
-              key={`experience-${index}`}
-              experience={experience}
-            />
+          {formation.map((formation, index) => (
+            <FormationCard key={`formation-${index}`} formation={formation} />
           ))}
         </VerticalTimeline>
       </div>
@@ -77,4 +71,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "experience");
+export default SectionWrapper(Formation, "formation");

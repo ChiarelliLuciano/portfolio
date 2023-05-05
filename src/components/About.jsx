@@ -38,17 +38,20 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h2 className={styles.sectionHeadText}>Sobre mí</h2>
+        <h2 className={`${styles.sectionHeadText} text-center`}>Sobre mí</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-2 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-2 text-secondary text-[17px]  leading-[30px] text-center"
       >
-        Soy Desarrollador Fullstack y estudiante de Ingeniería en Informática.
-        Tengo conocimientos de JavaScript, React, Node y Next.js. Me interesa
-        aprender nuevas tecnologías y trabajar en ámbitos amenos y ágiles con
-        profesionales de primer nivel. Gracias por visitar mi Portfolio!
+        Como desarrollador Full Stack, mi objetivo es generar software de alta
+        calidad que satisfaga las necesidades de los usuarios y supere sus
+        expectativas. Ya sea creando una nueva aplicación desde cero o mejorando
+        una existente, siempre estoy dispuesto a asumir nuevos desafíos y
+        aprender nuevas tecnologías para mejorar mis habilidades y estar al día
+        con las últimas tendencias de la industria. Gracias por visitar mi
+        Portfolio!
       </motion.p>
 
       <div className="mt-10 flex flex-wrap gap-10">
