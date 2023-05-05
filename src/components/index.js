@@ -7,7 +7,7 @@ import {
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import About from "./About";
-import Tech from "./Tech";
+import Stack from "./Stack";
 import Education from "./Education";
 import Works from "./Works";
 import Feedbacks from "./Feedbacks";
@@ -17,7 +17,7 @@ export {
   Hero,
   Navbar,
   About,
-  Tech,
+  Stack,
   Education,
   Works,
   Feedbacks,
