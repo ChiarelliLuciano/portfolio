@@ -4,6 +4,7 @@ import { technologies } from "../constants";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { textVariant } from "../utils/motion";
+import { Tooltip } from "antd";
 
 const Stack = () => {
   return (
@@ -13,14 +14,11 @@ const Stack = () => {
       </motion.div>
       <div className="mt-20 flex flex-row flex-wrap justify-center gap-10">
         {technologies.map((elem) => (
-          <div
-            className="w-28 h-28"
-            key={elem.name}
-            style={{ cursor: "pointer" }}
-            title={elem.name}
-          >
-            <BallCanvas icon={elem.icon} />
-          </div>
+          <Tooltip title={elem.name} color="#DE4C36" key={elem.name}>
+            <div className="w-28 h-28 cursor-pointer">
+              <BallCanvas icon={elem.icon} />
+            </div>
+          </Tooltip>
         ))}
       </div>
     </>
