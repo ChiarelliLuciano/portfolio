@@ -4,6 +4,7 @@ import KeyboardCanvas from "./Keyboard";
 import ComputersCanvas from "./Computers";
 import ComponentsCanvas from "./ComputerComponents";
 import StarsCanvas from "./Stars";
+import RocketCanvas from "./Rocket";
 
 export {
   EarthCanvas,
@@ -12,4 +13,5 @@ export {
   ComputersCanvas,
   ComponentsCanvas,
   StarsCanvas,
+  RocketCanvas,
 };
