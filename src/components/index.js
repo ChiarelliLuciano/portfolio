@@ -10,7 +10,6 @@ import About from "./About";
 import Stack from "./Stack";
 import Education from "./Education";
 import Works from "./Works";
-import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 
 export {
@@ -20,7 +19,6 @@ export {
   Stack,
   Education,
   Works,
-  Feedbacks,
   Contact,
   EarthCanvas,
   BallCanvas,
