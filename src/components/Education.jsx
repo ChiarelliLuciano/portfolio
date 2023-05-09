@@ -19,6 +19,7 @@ const FormationCard = ({ formation }) => {
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       iconStyle={{ background: formation.iconBg }}
+      date={formation.company_name}
       icon={
         <div className="flex justify-center items-center w-full h-full">
           <img
@@ -31,15 +32,8 @@ const FormationCard = ({ formation }) => {
     >
       <div>
         <h3 className="text-white text-[24px] font-bold">{formation.title}</h3>
-        <p
-          className="text-secondary text-[16px] font-semibold"
-          style={{ margin: 0 }}
-        >
-          {formation.company_name}
-        </p>
       </div>
-
-      <ul className="mt-5 list-disc ml-5 space-y-2">
+      <ul className="mt-4 list-disc ml-5 space-y-2">
         {formation.points.map((point, index) => (
           <li
             key={`formation-point-${index}`}
@@ -59,8 +53,7 @@ const Formation = () => {
       <motion.div variants={textVariant()}>
         <h2 className={`${styles.sectionHeadText} text-center`}>Formación</h2>
       </motion.div>
-
-      <div className="mt-20 flex flex-col">
+      <div className="mt-10 flex flex-col">
         <VerticalTimeline>
           {formation.map((formation, index) => (
             <FormationCard key={`formation-${index}`} formation={formation} />
