@@ -20,6 +20,11 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 //import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import express from "./tech/express.png";
+import mui from "./tech/mui.png";
+import mysql from "./tech/mysql.png";
+import next from "./tech/next.png";
+import postgresql from "./tech/postgresql.png";
 
 import unaj from "./company/unaj.jpg";
 import educacionit from "./company/educacionit.jpg";
@@ -50,6 +55,11 @@ export {
   redux,
   tailwind,
   threejs,
+  express,
+  mui,
+  mysql,
+  postgresql,
+  next,
   carrent,
   jobit,
   tripguide,

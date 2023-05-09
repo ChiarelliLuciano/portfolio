@@ -12,12 +12,13 @@ import {
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
+  mui,
+  mysql,
+  postgresql,
+  next,
   carrent,
   jobit,
   tripguide,
-  threejs,
   unaj,
   educacionit,
   p5,
@@ -59,11 +60,11 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
+    name: "HTML",
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: "CSS",
     icon: css,
   },
   {
@@ -79,32 +80,36 @@ const technologies = [
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "MaterialUI",
+    icon: mui,
+  },
+  {
+    name: "Tailwind",
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "PostgreSQL",
+    icon: postgresql,
+  },
+  {
+    name: "MySQL",
+    icon: mysql,
   },
   {
     name: "MongoDB",
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Next JS",
+    icon: next,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
