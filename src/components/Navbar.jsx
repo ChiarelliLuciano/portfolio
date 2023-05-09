@@ -23,7 +23,10 @@ const Navbar = () => {
         >
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Luciano &nbsp;
-            <span className="sm:block hidden">|&nbsp; Fullstack Developer</span>
+            <span className="sm:block hidden">
+              <span className="text-[#DE4C36]">|&nbsp;</span> Fullstack
+              Developer
+            </span>
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
@@ -31,8 +34,8 @@ const Navbar = () => {
             <li
               key={link.id}
               className={`${
-                active === link.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor:pointer`}
+                active === link.title ? "text-[#DE4C36]" : "text-white"
+              } hover:text-[#DE4C36] text-[18px] font-medium cursor:pointer`}
               onClick={() => {
                 setActive(link.title);
               }}
