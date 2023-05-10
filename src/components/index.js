@@ -12,6 +12,7 @@ import Stack from "./Stack";
 import Education from "./Education";
 import Works from "./Works";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 export {
   Hero,
@@ -21,6 +22,7 @@ export {
   Education,
   Works,
   Contact,
+  Footer,
   EarthCanvas,
   BallCanvas,
   StarsCanvas,

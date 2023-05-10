@@ -5,7 +5,12 @@ import { styles } from "../styles";
 import { EarthCanvas, RocketCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-import { message } from "antd";
+import { message, Tooltip } from "antd";
+import {
+  LinkedinOutlined,
+  GithubOutlined,
+  PaperClipOutlined,
+} from "@ant-design/icons";
 
 const Contact = () => {
   // Environment Variables
@@ -102,12 +107,44 @@ const Contact = () => {
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
             />
           </label>
-          <button
-            type="submit"
-            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
-          >
-            {loading ? "Enviando..." : "Enviar"}
-          </button>
+          <div className="flex justify-between px-8">
+            <button
+              type="submit"
+              className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+            >
+              {loading ? "Enviando..." : "Enviar"}
+            </button>
+            <Tooltip title="Conectar" placement="bottom" color="#0077B5">
+              <a
+                href="https://www.linkedin.com/in/luciano-chiarelli/"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-[#0077B5]"
+              >
+                <LinkedinOutlined className="text-2xl" />
+              </a>
+            </Tooltip>
+            <Tooltip title="Github" placement="bottom" color="#2EC369">
+              <a
+                href="https://www.github.com/ChiarelliLuciano"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-green-500"
+              >
+                <GithubOutlined className="text-2xl" />
+              </a>
+            </Tooltip>
+            <Tooltip title="Descargar CV" placement="bottom" color="#DE4C36">
+              <a
+                href="https://drive.google.com/file/d/1vDmM-1lv_LMS08QgSeJxeDw1qMEMruoF/view?usp=share_link"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-[#DE4C36]"
+              >
+                <PaperClipOutlined className="text-2xl" />
+              </a>
+            </Tooltip>
+          </div>
         </form>
       </motion.div>
       <motion.div
