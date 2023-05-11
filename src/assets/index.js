@@ -30,9 +30,10 @@ import unaj from "./company/unaj.jpg";
 import educacionit from "./company/educacionit.jpg";
 import p5 from "./company/p5.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import comingsoon from "./comingsoon.jpg";
+import portfolio from "./portfolio.png";
+import performance from "./performance.png";
+import bermejo from "./bermejo.png";
 
 export {
   logo,
@@ -60,9 +61,10 @@ export {
   mysql,
   postgresql,
   next,
-  carrent,
-  jobit,
-  tripguide,
+  comingsoon,
+  portfolio,
+  performance,
+  bermejo,
   unaj,
   educacionit,
   p5,

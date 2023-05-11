@@ -80,6 +80,7 @@ const Contact = () => {
             <input
               type="text"
               name="name"
+              required
               value={formData.name}
               onChange={handleChange}
               placeholder="Tu nombre:"
@@ -91,6 +92,7 @@ const Contact = () => {
             <input
               type="email"
               name="email"
+              required
               value={formData.email}
               onChange={handleChange}
               placeholder="Tu email:"
@@ -102,6 +104,7 @@ const Contact = () => {
             <textarea
               rows={5}
               name="message"
+              required
               value={formData.message}
               onChange={handleChange}
               placeholder="Tu mensaje:"
@@ -111,9 +114,13 @@ const Contact = () => {
           <div className="flex justify-between px-8">
             <button
               type="submit"
-              className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+              className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl hover:text-green-500"
             >
-              {loading ? <LoadingOutlined className="text-2xl" /> : "Enviar"}
+              {loading ? (
+                <LoadingOutlined className="text-3xl text-green-500" />
+              ) : (
+                "Enviar"
+              )}
             </button>
             <Tooltip title="Conectar" placement="bottom" color="#0077B5">
               <a
@@ -122,17 +129,17 @@ const Contact = () => {
                 rel="noreferrer"
                 className="hover:text-[#0077B5]"
               >
-                <LinkedinOutlined className="text-2xl" />
+                <LinkedinOutlined className="text-3xl mt-2" />
               </a>
             </Tooltip>
-            <Tooltip title="Github" placement="bottom" color="#2EC369">
+            <Tooltip title="Github" placement="bottom" color="#C13584">
               <a
                 href="https://www.github.com/ChiarelliLuciano"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-green-500"
+                className="hover:text-[#C13584]"
               >
-                <GithubOutlined className="text-2xl" />
+                <GithubOutlined className="text-3xl mt-2" />
               </a>
             </Tooltip>
             <Tooltip title="Descargar CV" placement="bottom" color="#DE4C36">
@@ -142,7 +149,7 @@ const Contact = () => {
                 rel="noreferrer"
                 className="hover:text-[#DE4C36]"
               >
-                <PaperClipOutlined className="text-2xl" />
+                <PaperClipOutlined className="text-3xl mt-2" />
               </a>
             </Tooltip>
           </div>

@@ -16,9 +16,10 @@ import {
   mysql,
   postgresql,
   next,
-  carrent,
-  jobit,
-  tripguide,
+  comingsoon,
+  portfolio,
+  performance,
+  bermejo,
   unaj,
   educacionit,
   p5,
@@ -147,67 +148,68 @@ const formation = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Portfolio",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Para mi primer portfolio como desarrollador, mi idea era lograr un diseño atractivo, interactivo y mobile responsive. Espero que te guste!",
     tags: [
       {
-        name: "react",
+        name: "ReactJS",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "ThreeJS",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: portfolio,
+    source_code_link: "https://github.com/ChiarelliLuciano/portfolio",
   },
   {
-    name: "Job IT",
+    name: "Performance Review",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Aplicación fullstack desarrollada en equipo durante la práctica profesional del JavaScript Bootcamp de Plataforma 5. Provee un ABM de varias entidades y también las herramientas para realizar devoluciones en base al rendimiento laboral.",
     tags: [
       {
-        name: "react",
+        name: "NextJS",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "PostgreSQL",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "MaterialUI",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: performance,
+    source_code_link: "https://github.com/GlobalNewsRRHH/client/tree/public",
   },
   {
-    name: "Trip Guide",
+    name: "Bermejo Especialidades",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Trabajo final del curso de ReactJs de EducaciónIT: recrear una página web existente solucionando sus problemas, mejorando su diseño y agregando funcionalidades.",
     tags: [
       {
-        name: "nextjs",
+        name: "ReactJS",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Swiper",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "EmailJS",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: bermejo,
+    source_code_link:
+      "https://github.com/ChiarelliLuciano/bermejo-especialidades",
   },
 ];
 
