@@ -1,5 +1,12 @@
 # Portfolio
 
+## Deploy
+<a href="https://lucianochiarelli.netlify.app/">
+   <img src="https://img.shields.io/badge/Hosted%20by-Netlify-blueviolet?style=for-the-badge&logo=netlify" alt="Hosted by Netlify" />
+</a>
+
+---
+
 ![Portfolio](https://github.com/ChiarelliLuciano/portfolio/blob/main/src/assets/portfolio.png)
 
 ## Introducción
