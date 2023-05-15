@@ -150,7 +150,7 @@ const projects = [
   {
     name: "Portfolio",
     description:
-      "Para mi primer portfolio como desarrollador, mi idea era lograr un diseño atractivo, interactivo y mobile responsive. Espero que te guste!",
+      "Para mi primer portfolio como desarrollador, el objetivo era lograr un diseño atractivo, interactivo y mobile responsive. Espero que te guste!",
     tags: [
       {
         name: "ReactJS",
