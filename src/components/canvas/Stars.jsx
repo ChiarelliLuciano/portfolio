@@ -8,7 +8,9 @@ const Stars = (props) => {
   const starRef = useRef();
   // States
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(5000), { radius: 1.2 })
+    random
+      .inSphere(new Float32Array(5000 * 3), { radius: 1.2 })
+      .filter((value) => !isNaN(value))
   );
   // Rotation
   useFrame((state, delta) => {

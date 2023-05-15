@@ -21,7 +21,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
+          <p className="text-white text-[18px] font-bold cursor-pointer flex hover:text-[#DE4C36]">
             Luciano &nbsp;
             <span className="sm:block hidden">
               <span className="text-[#DE4C36]">|&nbsp;</span> Fullstack
@@ -61,8 +61,8 @@ const Navbar = () => {
                 <li
                   key={link.id}
                   className={`${
-                    active === link.title ? "text-white" : "text-secondary"
-                  } font-poppins font-medium cursor-pointer text-[16px]`}
+                    active === link.title ? "text-[#DE4C36]" : "text-white"
+                  } font-poppins font-medium cursor-pointer text-[16px] hover:text-[#DE4C36]`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(link.title);
