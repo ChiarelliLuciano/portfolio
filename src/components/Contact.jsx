@@ -81,6 +81,7 @@ const Contact = () => {
               type="text"
               name="name"
               required
+              autoComplete="true"
               value={formData.name}
               onChange={handleChange}
               placeholder="Tu nombre:"
@@ -93,6 +94,7 @@ const Contact = () => {
               type="email"
               name="email"
               required
+              autoComplete="true"
               value={formData.email}
               onChange={handleChange}
               placeholder="Tu email:"
