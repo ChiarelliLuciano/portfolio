@@ -17,7 +17,7 @@ import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
-//import typescript from "./tech/typescript.png";
+import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import express from "./tech/express.png";
 import mui from "./tech/mui.png";
@@ -32,7 +32,7 @@ import p5 from "./company/p5.png";
 import comingsoon from "./comingsoon.jpg";
 import portfolio from "./portfolio.png";
 import performance from "./performance.png";
-import bermejo from "./bermejo.png";
+import groupchat from "./groupchat.png";
 
 export {
   logo,
@@ -48,6 +48,7 @@ export {
   git,
   html,
   javascript,
+  typescript,
   mongodb,
   nodejs,
   reactjs,
@@ -62,7 +63,7 @@ export {
   comingsoon,
   portfolio,
   performance,
-  bermejo,
+  groupchat,
   unaj,
   educacionit,
   p5,

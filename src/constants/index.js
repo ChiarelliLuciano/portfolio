@@ -4,8 +4,7 @@ import {
   database,
   design,
   javascript,
-  html,
-  css,
+  typescript,
   reactjs,
   redux,
   tailwind,
@@ -19,7 +18,7 @@ import {
   comingsoon,
   portfolio,
   performance,
-  bermejo,
+  groupchat,
   unaj,
   educacionit,
   p5,
@@ -61,16 +60,12 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML",
-    icon: html,
-  },
-  {
-    name: "CSS",
-    icon: css,
-  },
-  {
     name: "JavaScript",
     icon: javascript,
+  },
+  {
+    name: "TypeScript",
+    icon: typescript,
   },
   {
     name: "React JS",
@@ -148,6 +143,48 @@ const formation = [
 
 const projects = [
   {
+    name: "Open Chat App",
+    description:
+      "Aplicación de mensajería en tiempo real creada con NextJS, TypeScript, Tailwind y MongoDB.",
+    tags: [
+      {
+        name: "NextJS, TypeScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MongoDB, Prisma",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind, HeadlessUI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: groupchat,
+    source_code_link: "https://github.com/ChiarelliLuciano/chat-app",
+  },
+  {
+    name: "Performance Review",
+    description:
+      "Aplicación fullstack desarrollada durante la práctica profesional del Bootcamp de Plataforma 5. Provee un ABM de varias entidades y también las herramientas para realizar devoluciones en base al rendimiento laboral.",
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "PostgreSQL",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MaterialUI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: performance,
+    source_code_link: "https://github.com/GlobalNewsRRHH/client/tree/public",
+  },
+  {
     name: "Portfolio",
     description:
       "Para mi primer portfolio como desarrollador, el objetivo era lograr un diseño atractivo, interactivo y mobile responsive. Espero que te guste!",
@@ -167,49 +204,6 @@ const projects = [
     ],
     image: portfolio,
     source_code_link: "https://github.com/ChiarelliLuciano/portfolio",
-  },
-  {
-    name: "Performance Review",
-    description:
-      "Aplicación fullstack desarrollada en equipo durante la práctica profesional del JavaScript Bootcamp de Plataforma 5. Provee un ABM de varias entidades y también las herramientas para realizar devoluciones en base al rendimiento laboral.",
-    tags: [
-      {
-        name: "NextJS",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "PostgreSQL",
-        color: "green-text-gradient",
-      },
-      {
-        name: "MaterialUI",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: performance,
-    source_code_link: "https://github.com/GlobalNewsRRHH/client/tree/public",
-  },
-  {
-    name: "Bermejo Especialidades",
-    description:
-      "Trabajo final del curso de ReactJs de EducaciónIT: recrear una página web existente solucionando sus problemas, mejorando su diseño y agregando funcionalidades.",
-    tags: [
-      {
-        name: "ReactJS",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Swiper",
-        color: "green-text-gradient",
-      },
-      {
-        name: "EmailJS",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: bermejo,
-    source_code_link:
-      "https://github.com/ChiarelliLuciano/bermejo-especialidades",
   },
 ];
 
