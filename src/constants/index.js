@@ -15,7 +15,6 @@ import {
   mysql,
   postgresql,
   next,
-  comingsoon,
   portfolio,
   performance,
   groupchat,
