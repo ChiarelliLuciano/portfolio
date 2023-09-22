@@ -6,7 +6,6 @@ import { menu, close } from "../assets";
 
 const Navbar = () => {
   // States
-  const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   return (
     <nav
@@ -17,7 +16,6 @@ const Navbar = () => {
           to="/"
           className="flex items-center gap-2"
           onClick={() => {
-            setActive("");
             window.scrollTo(0, 0);
           }}
         >
@@ -29,22 +27,17 @@ const Navbar = () => {
             </span>
           </p>
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden md:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li
               key={link.id}
-              className={`${
-                active === link.title ? "text-[#DE4C36]" : "text-white"
-              } hover:text-[#DE4C36] text-[18px] font-medium cursor:pointer`}
-              onClick={() => {
-                setActive(link.title);
-              }}
+              className="text-white hover:text-[#DE4C36] text-[18px] font-medium cursor:pointer"
             >
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
         </ul>
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="md:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
             alt="menu"
@@ -60,12 +53,9 @@ const Navbar = () => {
               {navLinks.map((link) => (
                 <li
                   key={link.id}
-                  className={`${
-                    active === link.title ? "text-[#DE4C36]" : "text-white"
-                  } font-poppins font-medium cursor-pointer text-[16px] hover:text-[#DE4C36]`}
+                  className="font-poppins font-medium cursor-pointer text-[16px] text-white hover:text-[#DE4C36]"
                   onClick={() => {
                     setToggle(!toggle);
-                    setActive(link.title);
                   }}
                 >
                   <a href={`#${link.id}`}>{link.title}</a>

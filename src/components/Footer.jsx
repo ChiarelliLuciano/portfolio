@@ -1,11 +1,9 @@
-import { SectionWrapper } from "../hoc";
 import { ArrowUpOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 
-function Footer() {
+const Footer = () => {
   return (
-    <div className="flex justify-between">
-      <div></div>
+    <div className="flex justify-end gap-8 lg:gap-96 sm:px-16 px-6 sm:py-16 py-10">
       <p className="text-secondary pl-6 mt-3">
         ©Luciano Chiarelli. Todos los derechos reservados. 2023
       </p>
@@ -20,6 +18,6 @@ function Footer() {
       </Link>
     </div>
   );
-}
+};
 
-export default SectionWrapper(Footer, "");
+export default Footer;
