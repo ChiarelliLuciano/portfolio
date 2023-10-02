@@ -1,5 +1,4 @@
 import {
-  EarthCanvas,
   BallCanvas,
   KeyboardCanvas,
   StarsCanvas,
@@ -23,7 +22,6 @@ export {
   Works,
   Contact,
   Footer,
-  EarthCanvas,
   BallCanvas,
   StarsCanvas,
   KeyboardCanvas,

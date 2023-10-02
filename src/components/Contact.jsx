@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
-import { EarthCanvas, RocketCanvas } from "./canvas";
+import { RocketCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { message, Tooltip } from "antd";
@@ -146,7 +146,7 @@ const Contact = () => {
             </Tooltip>
             <Tooltip title="Descargar CV" placement="bottom" color="#DE4C36">
               <a
-                href="https://drive.google.com/file/d/1vDmM-1lv_LMS08QgSeJxeDw1qMEMruoF/view?usp=share_link"
+                href="https://drive.google.com/file/d/1rc3bP4RpC52dg9SsmB3YUi4oenTGhiT5/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-[#DE4C36]"

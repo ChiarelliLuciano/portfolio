@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="flex justify-end gap-8 lg:gap-96 sm:px-16 px-6 sm:py-16 py-10">
-      <p className="text-secondary pl-6 mt-3">
+    <div className="flex justify-between max-w-7xl mx-auto relative z-0 sm:px-16 px-6 sm:py-16 py-10">
+      <p className="text-xs md:text-lg text-secondary mt-3">
         ©Luciano Chiarelli. Todos los derechos reservados. 2023
       </p>
       <Link
@@ -14,7 +14,7 @@ const Footer = () => {
           window.scrollTo(0, 0);
         }}
       >
-        <ArrowUpOutlined className="text-3xl" />
+        <ArrowUpOutlined className="text-xl md:text-3xl" />
       </Link>
     </div>
   );
