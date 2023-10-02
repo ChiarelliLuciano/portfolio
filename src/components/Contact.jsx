@@ -146,7 +146,7 @@ const Contact = () => {
             </Tooltip>
             <Tooltip title="Descargar CV" placement="bottom" color="#DE4C36">
               <a
-                href="https://drive.google.com/file/d/1rc3bP4RpC52dg9SsmB3YUi4oenTGhiT5/view?usp=sharing"
+                href="https://drive.google.com/file/d/1MKi6mq6ZX_sg9RczvGrzQg1rKrNYix0P/view"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-[#DE4C36]"
